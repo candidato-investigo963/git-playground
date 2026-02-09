@@ -9,7 +9,7 @@ He creado un contenedor Docker para análisis de expresión diferencial.
 * **Tecnologías:** Docker, R, Bioconductor (DESeq2).
 * **Estado:** Verificado y Funcional.
 
-[Ver el Dockerfile en GitHub](https://github.com/candidato-investigo963/git-playground/blob/main/Dockerfile)
+[Ver el Dockerfile en GitHub](./docker/Dockerfile)
 
 ---
 
