@@ -1,1 +1,1 @@
-# Repo de pruebas Git + Bioinfo
+# Repositorio de pruebas 
