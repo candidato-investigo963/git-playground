@@ -1,0 +1,26 @@
+name: Bioinformatics Playground CI
+on: [push]
+
+jobs:
+  sanity-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. Download code
+        uses: actions/checkout@v4
+
+      - name: 2. Verify file structure
+        run: |
+          echo "Checking repository contents..."
+          ls -R
+
+      - name: 3. Validate
+        run: |
+          if [ -f "index.md" ]; then
+            echo "index.md exists. Ready for GitHub Pages!"
+          else
+            echo "Error: index.md missing"
+            exit 1
+          fi
+
+      - name: 4. Docker build test
+        run: docker build -t playground ./docker
